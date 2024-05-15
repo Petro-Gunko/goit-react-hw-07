@@ -1,0 +1,12 @@
+.container {
+  min-width: 290px;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.btnDelete {
+  height: fit-content;
+}
