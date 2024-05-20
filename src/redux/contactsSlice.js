@@ -23,7 +23,7 @@ const contactsSlice = createSlice({
                 state.items = action.payload;
                 state.loading = false;
             })
-            .addCase(fetchContacts.rejected, (state, action) => {
+            .addCase(fetchContacts.rejected, (state) => {
                 state.error = true;
                 state.loading = false;
             })
@@ -35,7 +35,7 @@ const contactsSlice = createSlice({
                 state.items.push(action.payload);
                 state.loading = false;
             })
-            .addCase(addContact1.rejected, (state, action) => {
+            .addCase(addContact1.rejected, (state) => {
                 state.error = true;
                 state.loading = false;
             })
@@ -49,7 +49,7 @@ const contactsSlice = createSlice({
                 );
                 state.loading = false;
             })
-            .addCase(deleteContact1.rejected, (state, action) => {
+            .addCase(deleteContact1.rejected, (state) => {
                 state.error = true;
                 state.loading = false;
             }),
